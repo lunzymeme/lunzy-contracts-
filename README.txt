@@ -1,28 +1,34 @@
-REMIX DEFAULT WORKSPACE
+# Lunzy (LNZ) — Next-Generation ERC20 Token
 
-Remix default workspace is present when:
-i. Remix loads for the very first time 
-ii. A new workspace is created with 'Default' template
-iii. There are no files existing in the File Explorer
+Lunzy is not just another ERC20 token. It is a meticulously engineered digital asset that combines advanced tokenomics, community-driven incentives, and automated on-chain mechanisms to ensure long-term sustainability and growth.
 
-This workspace contains 3 directories:
+## Key Features
 
-1. 'contracts': Holds three contracts with increasing levels of complexity.
-2. 'scripts': Contains four typescript files to deploy a contract. It is explained below.
-3. 'tests': Contains one Solidity test file for 'Ballot' contract & one JS test file for 'Storage' contract.
+- **Total Supply:** 5,000,000,000,000 LNZ  
+- **Automatic Taxation:** Every transfer applies a strategic allocation:
+  - 2% → Marketing Wallet (supports growth and community engagement)
+  - 1% → LUNC Burn Wallet (drives scarcity and long-term value)
+  - 1% → Liquidity Wallet (strengthens trading depth and stability)
+  - 1% → Auto-burn (deflationary mechanism enhancing token scarcity)
 
-SCRIPTS
+- **PinkLock Integration:** Transfers to/from PinkLock address bypass taxation for smooth partner & influencer operations.  
 
-The 'scripts' folder has two typescript files which help to deploy the 'Storage' contract using 'ethers.js' libraries.
+- **Transparent & On-Chain:** All tax, burn, and liquidity operations are executed on-chain, fully verifiable via the Ethereum network.
 
-For the deployment of any other contract, just update the contract name from 'Storage' to the desired contract and provide constructor arguments accordingly 
-in the file `deploy_with_ethers.ts`
+## Technical Overview
 
-In the 'tests' folder there is a script containing Mocha-Chai unit tests for 'Storage' contract.
+Lunzy leverages OpenZeppelin's battle-tested ERC20 framework, ensuring security, standard compliance, and upgradeability. Its `_update` function has been carefully overridden to implement real-time taxation, burn, and liquidity logic without compromising the core ERC20 functionalities.
 
-To run a script, right click on file name in the file explorer and click 'Run'. Remember, Solidity file must already be compiled.
-Output from script will appear in remix terminal.
+## Project Structure
 
-Please note, require/import is supported in a limited manner for Remix supported modules.
-For now, modules supported by Remix are ethers, swarmgw, chai, multihashes, remix and hardhat only for hardhat.ethers object/plugin.
-For unsupported modules, an error like this will be thrown: '<module_name> module require is not supported by Remix IDE' will be shown.
+- `contracts/` : Contains Lunzy.sol, the main smart contract.  
+- `scripts/`   : Optional deployment scripts (e.g., using ethers.js).  
+- `tests/`     : Optional unit tests for functionality verification.  
+
+## Vision
+
+Lunzy represents the next evolution in community-centric crypto tokens. With automatic tokenomics, transparent on-chain operations, and strategic burn mechanisms, it is designed to reward long-term holders, enhance liquidity, and create a sustainable ecosystem that grows alongside its community.
+
+---
+
+Explore Lunzy, inspect the smart contract, and experience the future of decentralized finance innovation.
